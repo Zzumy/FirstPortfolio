@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body {
+  height:100%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+
+html {
+  background: url('kepek/gow.jpg') fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: rgb(167,31,29);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: 200ms;
+}
+a:after {    
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(219,6,6);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+a:hover {
+  color: rgb(219,6,6);
+  font-size: 40px;
+}
+div {
+  overflow: hidden;
+}
+p {
+  padding: 0 5%;
+}
+
+img {
+  box-shadow: 0px 0px 5px #000;
+}
+h1 {
+  text-align: center;
+}
+#header {
+  background: rgba(255, 255, 255, .5);
+  padding: 10px;
+  overflow: hidden;
+  height: 50px;
+}
+#header img {
+  float: left;
+  box-shadow: none;
+  max-width: 12%;
+  height: auto;
+}
+#header ul {
+  list-style: none;
+  float: left;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+#header ul li {
+  float: left;
+  margin-left: 10px;
+  font-size: 30px;
+}
+.fullscreen {
+  height: 95%;
+  position: relative;
+}
+.fullscreen .header {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+}
+.text{
+	text-align:justify;
+}
+.white {
+  background: #eeeeec;
+  padding: 0 5%;
+}
+.semitrans {
+  background: rgba(255, 255, 255, .5);
+  padding: 0 5%;
+}
+.dark {
+  color: #eeeeec;
+  background: #010105;
+  padding: 0 5%;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.floatmiddle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

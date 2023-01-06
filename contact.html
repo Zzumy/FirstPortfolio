@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólió">
+    <meta name="keywords" content="Portfólió">
+    <meta name="author" content="Nguyen Duc Duy">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="css/img/kirby3.png" sizes="30x30"/>
+    <title>Nguyen Duc Duy</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+          <ul>
+              <li class="firstli">:.Nguyen Duc Duy.:</li>
+              <li class="secondli"><a href="index.html"><img src="css/img/kirby6.png" alt="">Menü<img src="css/img/kirby6.png" alt=""></a></li>
+              <li><a href="myself.html"><img src="css/img/kirby6.png" alt="">Magamról<img src="css/img/kirby6.png" alt=""></a></li>
+              <li><a href="hobbys.html"><img src="css/img/kirby6.png" alt="">Hobbik<img src="css/img/kirby6.png" alt=""></a></li>
+              <li><a href="portfolio.html"><img src="css/img/kirby6.png" alt="">Portfólió<img src="css/img/kirby6.png" alt=""></a></li>
+              <li><a href="contact.html"><img src="css/img/kirby6.png" alt="">Kapcsolat<img src="css/img/kirby6.png" alt=""></a></li>
+          </ul>
+      </nav>
+      <header class="smallheader">
+          <h2><a href="#article"><img src="css/img/kirby6.png" alt="">Kapcsolat<img src="css/img/kirby6.png" alt=""></a></h2>
+      </header>
+      <article id="article">
+        <form action="Feldolgoz.php" method="post">
+            <fieldset>
+                <legend>Felhasználó adatok</legend>
+                <label>Név: </label>
+                <input type="text" class="nev">
+                <span class="kepnev"></span><br>
+                <label>E-mail: </label>
+                <input type="text" class="email">
+                <span class="kepemail"></span><br>
+                <label>Kor: </label>
+                <input type="text" class="kor">
+                <span class="kepkor"></span><br>
+            </fieldset>
+            <fieldset>
+                <legend>Hogy tetszik az oldalam?</legend>
+                <input type="radio" name="ert" value="otos" checked>
+                <label>Nagyon tetszik</label><br>
+                <input type="radio" name="ert" value="negyes">
+                <label>Tetszik</label> <br>
+                <input type="radio" name="ert" value="harmas">
+                <label>Semleges</label><br>
+                <input type="radio" name="ert" value="kettes">
+                <label>Nem tetszik</label><br>
+                <input type="radio" name="ert" value="egyes">
+                <label>Egyáltalán nem jó</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Itt írhatsz nekem üzenetet</legend>
+                <label>Megjegyzés:</label>
+                <textarea rows="5" cols="80" class="megj"></textarea><br>
+            </fieldset>
+            <h2><input type="button" value="Elküld" class="kuld"></h2>
+        </form>
+      </article>
+      <footer>
+          <p>© Minden jog fenntartva</p>
+      </footer>
+    </main>
+  </body>
+</html>

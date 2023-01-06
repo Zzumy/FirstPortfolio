@@ -1,0 +1,111 @@
+main, article, header, nav, footer{
+
+    border:1px solid gray;
+    padding: 5px;
+    
+}
+
+
+
+main{
+
+    display: grid;
+    grid-template-areas: "h h h h"
+                        "n a a a"
+                        "f f f f";
+    max-width: 800px;
+    margin:auto;
+
+}
+
+header h1{
+
+    color:white;
+    padding-top: 90px;
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+header{
+
+    grid-area: h;
+    background-image: url("design/fejlec.jpg");
+    height: 150px;
+
+}
+
+nav{
+
+    background-color: rgb(94, 155, 3);
+    grid-area: n;
+
+}
+
+article{
+
+    grid-area: a;
+
+}
+
+footer{
+
+    grid-area: f;
+
+}
+
+nav ul{
+
+    padding-right: 100px;
+    list-style-type: none;
+
+}
+
+nav li{
+
+    margin: 5px;
+
+}
+nav li:hover{
+
+    background-color: brown;
+
+}
+
+a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+
+    color: white;
+
+}
+
+h2.zold{
+
+    color:green;
+
+}
+
+h2.barna{
+
+    color: brown;
+
+}
+
+th{
+
+    padding: 5px;
+    text-align: center;
+
+}
+
+td{
+
+    padding: 5px;
+    text-align: center;
+
+}
